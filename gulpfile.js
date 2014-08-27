@@ -171,7 +171,7 @@ gulp.task("serve", [
                     // IE9 output will be f*cked up here
                     + req.body + "\n"
                     + "-----END MOTION DATA-----");
-                  res.setHeader("Access-Control-Allow-Origin", "http://ci-example.com:8100");
+                  res.setHeader("Access-Control-Allow-Origin", "*");
                   res.setHeader("Access-Control-Allow-Credentials", "true");
                   res.end("ok");
                 } else {
